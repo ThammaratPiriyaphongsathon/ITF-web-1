@@ -1,45 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOVE SOMPHONG</title>
-    <link rel="stylesheet" href="css.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="script.js"></script>
 </head>
+
 <body>
-
-    <nav class="main-nav">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-
-    <div class="hero-section">
-        <h1>Welcome to Our Website!</h1>
-        <p>Prof.mmza101</p>
-        <button class="cta-button">LoVe Mjmj123404</button>
+    <div id="my-title" class="my-title">
+        ITF Phone Book
     </div>
-
-    <div class="content-section">
-        <div class="grid-container">
-            <div class="grid-item">
-                <h2>Hail to Mboi!</h2>
-                <p>UwUfufu</p>
-            </div>
-            <div class="grid-item">
-                <img src="https://scontent.fbkk8-4.fna.fbcdn.net/v/t1.6435-9/75550501_426652198219966_5954719800805556224_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=94e2a3&_nc_eui2=AeEG40EojyJ6cGNiIyta4SAYAX-hKcvdvRUBf6Epy929FVnRV3LLjPp5O36VwL56FrRzgeEuYxGnnWA-KBd3bEPQ&_nc_ohc=W54xbungVscQ7kNvgFSMJ1r&_nc_ht=scontent.fbkk8-4.fna&_nc_gid=Ad1xRM3U3Nds-O-qvnLfJFv&oh=00_AYAMRzLvz4OUqZAhdH_xl1y12epfopWslVbe5JMxdUduyw&oe=672F65BB" alt="Our services">
-            </div>
+    <div class="my-profile">
+        <img src="https://lh3.googleusercontent.com/a/ACg8ocI2Xgqyxi-hBXyR04K6FQKutFxYXjwAofjX82G0OoA08LkX0x3p=s360-c-no" width="183" height="183"
+            id="img-profile" />
+        <div class="noti">
+            1
         </div>
     </div>
-
-    <footer>
-        <p>Amogus</p>
-        <div class="social-links">
-            <a href="https://www.facebook.com/profile.php?id=100009310692460" target="_blank">Click here Facebook</a>
-    </footer>
-
+    <div class="my-panel">
+        <div class="my-grid">
+            <label for="userName">
+                Set the Username:
+            </label>
+            <input type="text" id="userName" name="userName" placeholder="Enter Username">
+            <button type="button" onclick="setuserName()">SET</button>
+        </div>
+        <div class="my-grid">
+            <label for="imgURL">
+                Set the profile image URL:
+            </label>
+            <input type="text" id="imgURL" name="imgURL" placeholder="Enter Image URL">
+            <button type="button" onclick="setProfile()">SET</button>
+        </div>
+    </div>
+    <div class="my-phone">
+        <label>
+            Phone Number List
+        </label>
+        <div class="contact">
+            <input type="text" id="addName" placeholder="Name" />
+            <input type="tel" id="addTel" placeholder="Tel" />
+            <button type="button" onclick="addContact()">ADD</button>
+            <button type="button" onclick="exportCSV()">EXPORT</button>
+        </div>
+        <div class="datalist">
+            <table id="my-table" cellspacing="0" cellpadding="0">
+                <tr class="first-tr">
+                    <th width="35%">
+                        No.
+                    </th>
+                    <th width="35%">
+                        Name
+                    </th>
+                    <th width="30%">
+                        Phone Number
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        Naver gonna give you up
+                    </td>
+                    <td>
+                        0909901010
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
 </body>
+
 </html>
